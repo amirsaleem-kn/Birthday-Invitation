@@ -22,6 +22,24 @@
     color: rgb(231, 231, 231);
 }
 
+.sub-title {
+    font-size: 24px;
+}
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.download-btn {
+    background-color: #D289AA;
+    border: 1px solid #D289AA;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
 /*  Mobile Responsive  */
 
 @media only screen and (max-width: 448px) {
