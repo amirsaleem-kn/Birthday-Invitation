@@ -9,7 +9,17 @@
 }
 
 .highlight {
-    color: #E8D5DB;
+    color: #D289AA;
+}
+
+.green {
+    color: #7e64bf;
+}
+
+.footer-text {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(231, 231, 231);
 }
 
 /*  Mobile Responsive  */
