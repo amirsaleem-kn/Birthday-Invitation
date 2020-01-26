@@ -8,6 +8,10 @@
     margin: 20px 0;
 }
 
+.highlight {
+    color: #E8D5DB;
+}
+
 /*  Mobile Responsive  */
 
 @media only screen and (max-width: 448px) {
