@@ -1,48 +1,15 @@
 /* Heading */
 
-section {
-    padding: 20px;
+.section {
+    padding: 20px 0;
 }
 
-.heading {
-    font-weight: 700;
-}
-
-.heading--primary {
-    font-size: 28px;
-    margin: 15px 0;
-}
-
-.sub-heading {
-    font-weight: 400;
-}
-
-.sub-heading--primary {
-    font-size: 20px;
-    margin: 15px 0;
-}
-
-/* Text Alignment */
-
-.align-left {
-    text-align: left;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.align-center {
-    text-align: center;
+.space-between {
+    margin: 20px 0;
 }
 
 /*  Mobile Responsive  */
 
 @media only screen and (max-width: 448px) {
-    .heading--primary {
-        font-size: 18px;
-    }
-    .sub-heading--primary {
-        font-size: 14px;
-    }
+  
 }

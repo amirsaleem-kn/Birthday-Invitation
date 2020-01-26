@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    max-width: 100%;
+    font-family: 'Abril Fatface', cursive;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul, li, body {
@@ -24,4 +25,9 @@ a {
 img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+}
+
+.container-fluid {
+    padding: 0;
 }
