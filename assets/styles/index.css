@@ -1,6 +1,6 @@
 footer {
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
     padding: 20px 10px;
-    border-top: 2px solid #D289AA;
-    background-color: rgb(75, 75, 75);
+    /* border-top: 2px solid #D289AA; */
+    /* background-color: rgb(75, 75, 75); */
 }
