@@ -13,16 +13,15 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/index.css">
     <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/countdown.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row section">
             <div class="col-sm">
-                <h1 class="text-center space-between highlight">Aysel is turning <span class="pinky-border">One</span>
-              
-                               
-                </h1>
+                <h1 class="text-center space-between highlight">Aysel is turning <span class="pinky-border">One</span></h1>
+                <p id="countdown-timer"></p>
 <div class="row section">
 <div class="col-sm">
 <p style="color:#049CFC" class="text-justify"> Yes, the wait is finally over. She is here.  The little bit of Heaven is in our arms !!
@@ -63,7 +62,45 @@ It seems like just yesterday you were Brand New and now our Baby you're gonna be
         <div class="row section">
             <div class="col-sm">
                 <h2 class="text-center space-between highlight" style="margin-bottom: 60px;">Gallery</h2>
-                <section id="photos">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/month 1 use final.jpg" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide1.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide2.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide3.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide4.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide5.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide6.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide7.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide8.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide9.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/Slide10.JPG" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 space-between">
+                        <img src="assets/images/last slide.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <section id="photos">
                     <img src="assets/images/month 1 use final.jpg" alt="">
                     <img src="assets/images/Slide1.JPG" alt="">
                     <img src="assets/images/Slide2.JPG" alt="">
@@ -76,7 +113,7 @@ It seems like just yesterday you were Brand New and now our Baby you're gonna be
                     <img src="assets/images/Slide9.JPG" alt="">
                     <img src="assets/images/Slide10.JPG" alt="">
                     <img src="assets/images/last slide.jpg" alt="">
-                </section>
+                </section> -->
             </div>
         </div>
         <div class="row section">
@@ -110,6 +147,21 @@ It seems like just yesterday you were Brand New and now our Baby you're gonna be
                 <p class="text-center">Ramsha &amp; Anwar ( 9971997027 )</p>
             </div>
         </footer>
+        <script>
+            const element = document.getElementById("countdown-timer");
+            function getSeconds(timestamp) {
+                return +(timestamp).toString().substr(0,10);
+            }
+            const countDownTimestamp = 1580594613000;
+            const timerId = countdown( countDownTimestamp, handleTimer, countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
+            function handleTimer(ts) {
+                const timestamp = getSeconds(new Date().getTime());
+                if (getSeconds(countDownTimestamp) == timestamp) {
+                    clearInterval(timerId);
+                }
+                element.innerHTML = ts.toHTML("strong");
+            }
+        </script>
     </div>
 </body>
 
