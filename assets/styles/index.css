@@ -4,3 +4,14 @@ footer {
     /* border-top: 2px solid #D289AA; */
     /* background-color: rgb(75, 75, 75); */
 }
+
+#countdown-timer {
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 400px) {
+    #countdown-timer {
+        font-size: 12px;
+   }
+ }
