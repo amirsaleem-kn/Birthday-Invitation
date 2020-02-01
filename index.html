@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row section">
             <div class="col-sm">
-                <h1 class="text-center space-between highlight">Aysel is turning <span class="pinky-border">One</span></h1>
+                <h1 class="text-center space-between highlight" id="primary-text">Aysel is turning <span class="pinky-border">One</span></h1>
                 <p id="countdown-timer"></p>
 <div class="row section">
 <div class="col-sm">
@@ -100,20 +100,6 @@ It seems like just yesterday you were Brand New and now our Baby you're gonna be
                         <img src="assets/images/last slide.jpg" alt="">
                     </div>
                 </div>
-                <!-- <section id="photos">
-                    <img src="assets/images/month 1 use final.jpg" alt="">
-                    <img src="assets/images/Slide1.JPG" alt="">
-                    <img src="assets/images/Slide2.JPG" alt="">
-                    <img src="assets/images/Slide3.JPG" alt="">
-                    <img src="assets/images/Slide4.JPG" alt="">
-                    <img src="assets/images/Slide5.JPG" alt="">
-                    <img src="assets/images/Slide6.JPG" alt="">
-                    <img src="assets/images/Slide7.JPG" alt="">
-                    <img src="assets/images/Slide8.JPG" alt="">
-                    <img src="assets/images/Slide9.JPG" alt="">
-                    <img src="assets/images/Slide10.JPG" alt="">
-                    <img src="assets/images/last slide.jpg" alt="">
-                </section> -->
             </div>
         </div>
         <div class="row section">
@@ -152,12 +138,15 @@ It seems like just yesterday you were Brand New and now our Baby you're gonna be
             function getSeconds(timestamp) {
                 return +(timestamp).toString().substr(0,10);
             }
-            const countDownTimestamp = 1580594613000;
+            const countDownTimestamp = 1580581800000;
             const timerId = countdown( countDownTimestamp, handleTimer, countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
             function handleTimer(ts) {
                 const timestamp = getSeconds(new Date().getTime());
                 if (getSeconds(countDownTimestamp) == timestamp) {
+                    document.getElementById("primary-text").innerHTML = "Aysel has turned One";
+                    element.innerHTML = "Happy B'day Aysel";
                     clearInterval(timerId);
+                    return;
                 }
                 element.innerHTML = ts.toHTML("strong");
             }
