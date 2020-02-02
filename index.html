@@ -139,16 +139,16 @@ It seems like just yesterday you were Brand New and now our Baby you're gonna be
                 return +(timestamp).toString().substr(0,10);
             }
             const countDownTimestamp = 1580581800000;
-            const timerId = countdown( countDownTimestamp, handleTimer, countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
-            function handleTimer(ts) {
-                const timestamp = getSeconds(new Date().getTime());
-                if (getSeconds(countDownTimestamp) == timestamp) {
-                    document.getElementById("primary-text").innerHTML = "Aysel has turned One";
-                    element.innerHTML = "Happy B'day Aysel";
-                    clearInterval(timerId);
-                    return;
-                }
-                element.innerHTML = ts.toHTML("strong");
+            // const timerId = countdown( countDownTimestamp, handleTimer, countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
+            // function handleTimer(ts) {
+            //     const timestamp = getSeconds(new Date().getTime());
+            //     if (getSeconds(countDownTimestamp) == timestamp) {
+            //         document.getElementById("primary-text").innerHTML = "Aysel has turned One";
+            //         element.innerHTML = "Happy B'day Aysel";
+            //         clearInterval(timerId);
+            //         return;
+            //     }
+            //     element.innerHTML = ts.toHTML("strong");
             }
         </script>
     </div>
